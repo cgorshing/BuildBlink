@@ -47,6 +47,7 @@
         "node-inspector": "0.1.10"
     },
     "bundleDependencies": [],
+    "license": "MIT",
     "licenses": [
         {
           "type": "MIT",
