@@ -11,7 +11,6 @@ suite('BuildActivity', function() {
 		// config = JSON.parse(fs.readFileSync('./conf/default/config.json', "utf8"));
 	});
 
-
 	suite('should_correctly_identify_state_of_build', function() {
 		test('should_identify_green_build', function() {
 			var buildJson = JSON.parse(fs.readFileSync('./test/samples/teamcityApi/success.json', "utf8"));
@@ -34,8 +33,6 @@ suite('BuildActivity', function() {
 			activity.should.have.property('isBuilding', true);
 			activity.should.have.property('isBuildingFromRed', false);
 			activity.should.have.property('isBuildingFromGreen', true);
-			
-
 		});
 
 		test('should_identify_as_building_from_red', function() {
@@ -49,8 +46,6 @@ suite('BuildActivity', function() {
 			activity.should.have.property('isBuilding', true);
 			activity.should.have.property('isBuildingFromRed', true);
 			activity.should.have.property('isBuildingFromGreen', false);
-
-
 		});
 
 		test('should_identify_red_build', function() {
@@ -64,23 +59,13 @@ suite('BuildActivity', function() {
 			activity.should.have.property('isBuilding', false);
 			activity.should.have.property('isRed', true);
 			console.log(JSON.stringify(activity));
-
-
 		});
-
 
 		test('should_have_proper_build_token', function() {
 			var buildJson = JSON.parse(fs.readFileSync('./test/samples/teamcityApi/redBuild.json', "utf8"));
 			var activity = new BuildActivity(buildJson);
 
 			activity.should.have.property('instanceToken', 'bt4:83');
-
-
 		});
-
-
-
 	});
-
-
 });
