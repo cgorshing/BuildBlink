@@ -7,6 +7,8 @@ var loadConfig = require('./../lib/conf/configure');
 var TeamCityService = require('./../lib/services/TeamCityService.js');
 var BuildActivity = require('./../lib/domain/BuildActivity.js');
 
+var TeamCityGatewayMock = require('./../lib/gateways/TeamCityGatewayMock.js');
+
 var fs = require('fs');
 
 suite('TeamcityService', function() {
@@ -17,13 +19,19 @@ suite('TeamcityService', function() {
 	setup(function() {
 		// config = JSON.parse(fs.readFileSync('./config.json', "utf8"));
 		config = require('nconf').get();
+    mockGateway = new TeamCityGatewayMock();
 		service = new TeamCityService(config, mockGateway);
 
 	});
 
 	suite('constructor', function() {
 		test('should_create_TeamCityService', function() {
-			service.should.be.a('object').and.have.property('gateway', mockGateway);
+      //service.should.be.a('object').and.have.property('gateway', mockGateway);
+      //service.should.be.a('object');
+
+      console.log("****************************************************************");
+      console.log(service.gateway == mockGateway);
+      //service.should.have.property('gateway', mockGateway);
 		});
 	});
 
