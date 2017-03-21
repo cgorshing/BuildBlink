@@ -4,8 +4,8 @@ var colors = require('colors');
 var prettyjson = require('prettyjson');
 var loadConfig = require('./../lib/conf/configure');
 
-var TeamCityService = require('./../services/TeamCityService.js');
-var BuildActivity = require('./../domain/BuildActivity.js');
+var TeamCityService = require('./../lib/services/TeamCityService.js');
+var BuildActivity = require('./../lib/domain/BuildActivity.js');
 
 var fs = require('fs');
 
