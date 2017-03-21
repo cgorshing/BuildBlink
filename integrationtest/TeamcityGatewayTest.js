@@ -1,7 +1,7 @@
 var assert = require('assert');
 var should = require('should');
 
-var TeamCityGateway = require('./../gateways/TeamCityGateway.js');
+var TeamCityGateway = require('./../lib/gateways/TeamCityGateway.js');
 var fs = require('fs');
 
 suite('TeamCityGateway', function() {
