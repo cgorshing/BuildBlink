@@ -7,7 +7,7 @@ var loadConfig = require('./../lib/conf/configure');
 var TeamCityService = require('./../lib/services/TeamCityService.js');
 var BuildActivity = require('./../lib/domain/BuildActivity.js');
 
-var TeamCityGatewayMock = require('./../lib/gateways/TeamCityGatewayMock.js');
+var TeamCityGatewayMock = require('./TeamCityGatewayMock.js');
 
 var fs = require('fs');
 
