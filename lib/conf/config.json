@@ -1,5 +1,5 @@
 {
-    "teamcityHost": "192.168.1.170:8111",
+    "teamcityHost": "127.0.0.1",
     "teamcityBuildNumbers": [
         {
             "name": "server specs",
