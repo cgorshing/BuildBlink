@@ -47,7 +47,7 @@
         "should": "8.0.x",
         "mocha": "2.3.x",
         "node-inspector": "0.12.x",
-        "nock": "3.6.x"
+        "nock": "9.0.x"
     },
     "bundleDependencies": [],
     "license": "MIT",
