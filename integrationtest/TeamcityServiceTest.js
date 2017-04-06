@@ -21,7 +21,6 @@ suite('TeamcityService', function() {
     config = require('nconf').get();
     mockGateway = new TeamCityGatewayMock();
     service = new TeamCityService(config, mockGateway);
-
   });
 
   suite('constructor', function() {

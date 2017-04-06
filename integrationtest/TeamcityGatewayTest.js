@@ -2,6 +2,7 @@ var assert = require('assert');
 var should = require('should');
 var nock = require('nock');
 
+var BuildActivity = require('./../lib/domain/BuildActivity.js');
 var TeamCityGateway = require('./../lib/gateways/TeamCityGateway.js');
 var fs = require('fs');
 
@@ -33,7 +34,8 @@ suite('TeamCityGateway', function() {
       var gateway = new TeamCityGateway("localhost");
 
       gateway.getBuildsForProjectId('BranchingTest_Build', function(err,result) {
-        result.count.should.be.above(-1);
+
+        result.should.be.an.instanceof(BuildActivity);
         done();
       });
     });
