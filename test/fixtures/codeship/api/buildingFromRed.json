@@ -1,0 +1,21 @@
+{
+  "id": 25923,
+  "builds": [
+    {
+      "id": 1618790,
+      "uuid": "3cb5ef20-eb85-0131-f7ee-5a3fc7e1189a",
+      "status": "success",
+      "commit_id": "eee410b60767f88f10b90f8d1fae1d8d88f0440c",
+      "message": "Server configured to handle dynamic port allocation",
+      "branch": "master"
+    },
+    {
+      "id": 1573927,
+      "uuid": "5157b5f0-eb83-0131-52c4-32cc3da1921e",
+      "status": "error",
+      "commit_id": "fdaad65e3c33aea2f41e1cbc2e5a3438c3a1631a",
+      "message": "Added node version to the configuration for CI",
+      "branch": "master"
+    }
+  ]
+}

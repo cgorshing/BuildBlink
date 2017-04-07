@@ -1,0 +1,110 @@
+{"projects": [
+  {
+    "id": 25923,
+    "builds": [
+      {
+        "id": 1618790,
+        "uuid": "0d9ce7e0-f038-0131-1924-5699c2e7bb50",
+        "status": "testing",
+        "commit_id": "eee410b60767f88f10b90f8d1fae1d8d88f0440c",
+        "message": "Server configured to handle dynamic port allocation",
+        "branch": "master"
+      },
+      {
+        "id": 1573927,
+        "uuid": "5157b5f0-eb83-0131-52c4-32cc3da1921e",
+        "status": "error",
+        "commit_id": "fdaad65e3c33aea2f41e1cbc2e5a3438c3a1631a",
+        "message": "Added node version to the configuration for CI",
+        "branch": "master"
+      }
+    ],
+    "repository_name": "gregstewart/weatherly"
+  },
+  {
+    "id": 20905,
+    "builds": [
+      {
+        "id": 1638836,
+        "uuid": "0f3f9ce0-ee7c-0131-545f-26d0e8f474e3",
+        "status": "success",
+        "commit_id": "d4816d826430fbaa68b863411735ddf0f7a15e7e",
+        "message": "Bumped versions of gem files and updated Foursqaure api version to todays' date",
+        "branch": "master"
+      },
+      {
+        "id": 1399448,
+        "uuid": "f3c24130-d252-0131-d3dc-2e080cfc1ecc",
+        "status": "success",
+        "commit_id": "ba722ef97a1f64d4f059b6c9108beee83ae1be11",
+        "message": "added a test for the github parser and extracted the slightly complex commit message parsing into it's own method",
+        "branch": "master"
+      },
+      {
+        "id": 1314212,
+        "uuid": "2e064b80-c74d-0131-aae8-46850ebce0cb",
+        "status": "success",
+        "commit_id": "2fb2e2bc600683498a4c74ea08fa35f24e218fb2",
+        "message": "Renamed a few things",
+        "branch": "master"
+      },
+      {
+        "id": 1309377,
+        "uuid": "6c3615b0-c657-0131-31d3-2a70d2ccb249",
+        "status": "success",
+        "commit_id": "664eb1b8e37f7e1642dd9eff4c000590abef1655",
+        "message": "More code refactoring, removed a lot of the duplicate boilerplate",
+        "branch": "master"
+      },
+      {
+        "id": 1309156,
+        "uuid": "098e6660-c642-0131-31d3-2a70d2ccb249",
+        "status": "success",
+        "commit_id": "0de489716c89e596acf2a4a90922ec1081010dd6",
+        "message": "A bunch of refactoring, lots of boilerplate now, however should allow me to move toward a factory for fetching the content",
+        "branch": "master"
+      },
+      {
+        "id": 1308867,
+        "uuid": "8c6f2030-c620-0131-31d3-2a70d2ccb249",
+        "status": "success",
+        "commit_id": "02a83c348e609b65a9c91b327d096b7588d76a8a",
+        "message": "Merge branch 'master' of github.com:gregstewart/Teacup-In-A-Storm",
+        "branch": "master"
+      },
+      {
+        "id": 1308853,
+        "uuid": "52c37570-c61f-0131-31d3-2a70d2ccb249",
+        "status": "success",
+        "commit_id": "58f2f3d704dbd7fa17330ce33cd211529d6cabe0",
+        "message": "R-enabling caching",
+        "branch": "master"
+      },
+      {
+        "id": 1308844,
+        "uuid": "4bd39c50-c61d-0131-31d3-2a70d2ccb249",
+        "status": "success",
+        "commit_id": "5942aec2bf113cab4e6bce13c8c15ac0c7982cdb",
+        "message": "Removed caching",
+        "branch": "master"
+      },
+      {
+        "id": 1307708,
+        "uuid": "ced5c560-c57e-0131-0be6-6e26ea93ee5b",
+        "status": "success",
+        "commit_id": "dbcc6938be4a6d8a027f37bf417895fffd07c596",
+        "message": "Since I am still experiencing 401 with code climate for coverage back to coveralls we go",
+        "branch": "master"
+      },
+      {
+        "id": 1307703,
+        "uuid": "fb14b350-c57c-0131-bd6e-6ee82fa307ab",
+        "status": "success",
+        "commit_id": "dbcc6938be4a6d8a027f37bf417895fffd07c596",
+        "message": "Since I am still experiencing 401 with code climate for coverage back to coveralls we go",
+        "branch": "foursquare-maps"
+      }
+    ],
+    "repository_name": "gregstewart/Teacup-In-A-Storm"
+  }
+]}

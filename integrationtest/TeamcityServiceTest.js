@@ -4,22 +4,22 @@ var colors = require('colors');
 var prettyjson = require('prettyjson');
 var loadConfig = require('./../lib/conf/configure');
 
-var TeamCityService = require('./../lib/services/TeamCityService.js');
-var BuildActivity = require('./../lib/domain/BuildActivity.js');
-
-var TeamCityGatewayMock = require('./TeamCityGatewayMock.js');
+var TeamCityService = require('../lib/services/TeamCityService.js');
+var TeamCityBuildActivity = require('../lib/domain/TeamCityBuildActivity.js');
 
 var fs = require('fs');
 
 suite('TeamcityService', function() {
   var config;
   var service;
-  var mockGateway;
+  var mockGateway = {};
 
   setup(function() {
-    // config = JSON.parse(fs.readFileSync('./config.json', "utf8"));
-    config = require('nconf').get();
-    mockGateway = new TeamCityGatewayMock();
+    //config = require('nconf').get();
+    config = JSON.parse(fs.readFileSync('./integrationtest/fakeTeamCityConfig.json', "utf8"));
+    mockGateway.getBuildsForProjectId = function (projectId, callback) {
+      callback(null, { build: [{buildTypeId: projectId, id: ''}, {buildTypeId: '', id: ''}]});
+    };
     service = new TeamCityService(config, mockGateway);
   });
 
@@ -33,8 +33,7 @@ suite('TeamcityService', function() {
     test('should_return_build_activity', function(done) {
 
       service.getBuildActivityForBuildId('BranchingTest_Build', function(err, result) {
-        // console.log(prettyjson.render(result));
-        result.should.be.an.instanceof(BuildActivity, "BuildActivity");
+        result.should.be.an.instanceof(TeamCityBuildActivity, "BuildActivity");
         result.currentBuild.buildTypeId.should.equal('BranchingTest_Build');
         done();
       });
@@ -43,7 +42,6 @@ suite('TeamcityService', function() {
 
   suite('getAllBuilds', function() {
     test('should_return_correct_number_of_BuildActivity_objects', function(done) {
-
       service.getAllBuilds(function(err, result) {
         should.not.exist(err);
         should.exist(result);

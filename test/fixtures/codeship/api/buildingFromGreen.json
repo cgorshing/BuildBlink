@@ -1,0 +1,29 @@
+{
+  "id": 20905,
+  "builds": [
+    {
+      "id": 1638836,
+      "uuid": "0f3f9ce0-ee7c-0131-545f-26d0e8f474e3",
+      "status": "success",
+      "commit_id": "d4816d826430fbaa68b863411735ddf0f7a15e7e",
+      "message": "Bumped versions of gem files and updated Foursqaure api version to todays' date",
+      "branch": "master"
+    },
+    {
+      "id": 1399448,
+      "uuid": "f3c24130-d252-0131-d3dc-2e080cfc1ecc",
+      "status": "success",
+      "commit_id": "ba722ef97a1f64d4f059b6c9108beee83ae1be11",
+      "message": "added a test for the github parser and extracted the slightly complex commit message parsing into it's own method",
+      "branch": "master"
+    },
+    {
+      "id": 1314212,
+      "uuid": "2e064b80-c74d-0131-aae8-46850ebce0cb",
+      "status": "success",
+      "commit_id": "2fb2e2bc600683498a4c74ea08fa35f24e218fb2",
+      "message": "Renamed a few things",
+      "branch": "master"
+    }
+  ]
+}

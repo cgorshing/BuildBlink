@@ -1,0 +1,10 @@
+{
+  "host": "www.codeship.io/api/v1/",
+  "apiKey": "someApiKey",
+  "codeshipBuildNumbers": [
+    {
+      "name": "someBuild",
+      "id": "someID"
+    }
+  ]
+}
