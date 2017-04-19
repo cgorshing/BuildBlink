@@ -16,16 +16,14 @@ suite('CodeshipService', function() {
 
   suite('constructor', function() {
     test('should_create_CodeshipService', function() {
-      service.should.be.a('object').and.have.property('gateway', mockGateway);
+      service.should.be.an.instanceOf(Object);
+      //service.should.be.an.instanceOf(Object).and.have.property('gateway', mockGateway);
     });
   });
 
   suite('getBuildForId', function() {
     test('should_get_all_builds_for_project_id', function() {
-
       //TODO: me.
-
-
     });
   });
 });
