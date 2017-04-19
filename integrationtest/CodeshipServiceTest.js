@@ -44,7 +44,7 @@ suite('CodeshipService', function() {
 
   suite('constructor', function() {
     test('should_create_TeamCityService', function() {
-      service.should.be.a('object').and.have.property('gateway', mockGateway);
+      service.should.be.an.instanceOf(Object).and.have.property('gateway', mockGateway);
     });
   });
 
