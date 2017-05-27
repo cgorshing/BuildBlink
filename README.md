@@ -1,10 +1,10 @@
 Build Blink
 ====================
-Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) product as a continuous integration build light. 
+Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) product as a continuous integration build light.
 
 
-[![Build Status](https://travis-ci.org/brettswift/BuildBlink.png?branch=master)](https://travis-ci.org/brettswift/BuildBlink)
-[![Dependency Status](https://gemnasium.com/brettswift/BuildBlink.svg)](https://gemnasium.com/brettswift/BuildBlink)
+[![Build Status](https://travis-ci.org/cgorshing/BuildBlink.png?branch=master)](https://travis-ci.org/cgorshing/BuildBlink)
+[![Dependency Status](https://gemnasium.com/cgorshing/BuildBlink.svg)](https://gemnasium.com/cgorshing/BuildBlink)
 
 Install & Usage
 ---------------
