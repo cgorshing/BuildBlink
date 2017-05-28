@@ -15,7 +15,9 @@ Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) p
 
 Install & Usage
 ---------------
+Clone the repository, change to the directory and execute `bin/buildblink.js`
 
+#### Older Instructions
 install:
 `npm install buildblink -g`
 
