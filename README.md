@@ -11,6 +11,10 @@ Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) p
 [![Code Climate](https://img.shields.io/codeclimate/coverage/github/cgorshing/BuildBlink.svg)](https://img.shields.io/codeclimate/coverage/github/cgorshing/BuilBlink.svg)
 [![Code Climate](https://img.shields.io/codeclimate/issues/github/cgorshing/BuildBlink.svg)](https://img.shields.io/codeclimate/issues/github/cgorshing/BuildBlink.svg)
 
+[[https://github.com/cgorshing/BuildBlink/blob/master/build-notification.jpg|alt=build%20notification%20light]]
+![Build notification light](https://raw.githubusercontent.com/cgorshing/BuildBlink/branch/build-notification.jpg)
+
+
 Install & Usage
 ---------------
 
