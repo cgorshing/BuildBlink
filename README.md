@@ -48,16 +48,16 @@ Requirements
 
 TeamCity has to have guestAuth enabled. Your TeamCity should respond to the sample url:
 
-[http://teamcity:8111/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2](http://teamcity:8111/guestAuth/app/rest/buildTypes/id:BranchingTest_Build/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2)
+[http://teamcity.example.com:8111/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2](http://teamcity.example.com:8111/<optional prefix path>/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2)
 
-* swap TeamCity, and Build_Identifier sections in the above url to test.
+An optional `teamcityPostfix` can also be specified in case the application is not mapped to the root path. See the examples of this configuration in the sample `~/.buildblinkrc` files below.
 
 Currently only tested on OSX.
 
 Supported CI servers:
 ----------------------
 * Codeship (Thanks to [Greg Stewart](https://github.com/gregstewart))
-* ConcourseCI
+* Concourse CI
 * Jenkins
 * TeamCity
 * TBD
@@ -65,6 +65,30 @@ Supported CI servers:
 
 Example Configuration Files
 ---------------------------
+#### Concourse CI
+```json
+{
+  "serviceType": 4,
+  "concourseHost": "concourse.ci.example.com",
+  "concourseScheme": "http",
+  "__comment": "The colorStrength setting is optional",
+  "colorStrength": 175,
+
+  "concourseBuildNumbers": [
+    {
+      "job_name": "some-job-name",
+      "team": "the-team-name",
+      "pipeline": "the-pipeline-name"
+    },
+    {
+      "job_name": "some-job-name-2",
+      "team": "the-team-name-2",
+      "pipeline": "the-pipeline-name-2"
+    }
+  ]
+}
+```
+
 #### Jenkins
 ```json
 {
@@ -89,28 +113,51 @@ Example Configuration Files
 }
 ```
 
-#### Concourse
+#### TeamCity
 ```json
 {
-  "serviceType": 4,
-  "concourseHost": "concourse.ci.example.com",
-  "concourseScheme": "http",
+  "serviceType": 1,
+  "teamcityHost": "teamcity.example.com",
+
+  "__comment": "The teamcityPostfix setting is optional",
+  "teamcityPostfix": "",
+
   "__comment": "The colorStrength setting is optional",
   "colorStrength": 175,
 
-  "concourseBuildNumbers": [
+  "teamcityBuildNumbers": [
     {
-      "job_name": "some-job-name",
-      "team": "the-team-name",
-      "pipeline": "the-pipeline-name"
+      "id": "build-id-1"
     },
     {
-      "job_name": "some-job-name-2",
-      "team": "the-team-name-2",
-      "pipeline": "the-pipeline-name-2"
+      "id": "build-id-2"
     }
   ]
 }
+```
+
+Building
+--------
+A provided `Makefile` will hopefully help in testing and development.
+
+Run only tests in the test/ folder:
+```
+make test
+```
+
+Run only integration tests in the integrationtest/ folder:
+```
+make integrationtest
+```
+
+Run both kinds of tests (_all_ tests)
+```
+make all
+```
+
+See the help provided in the make file:
+```
+make help
 ```
 
 Contributing
