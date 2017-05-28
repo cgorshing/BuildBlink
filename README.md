@@ -2,6 +2,7 @@ Build Blink
 ====================
 Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) product as a continuous integration build light.
 
+![Build notification light](https://raw.githubusercontent.com/cgorshing/BuildBlink/master/build-notification.jpg)
 
 [![Build Status](https://travis-ci.org/cgorshing/BuildBlink.png?branch=master)](https://travis-ci.org/cgorshing/BuildBlink)
 [![Dependency Status](https://gemnasium.com/cgorshing/BuildBlink.svg)](https://gemnasium.com/cgorshing/BuildBlink)
@@ -10,8 +11,6 @@ Uses [ThingM.com](http://thingm.com/)'s  [blink(1)](http://blink1.thingm.com/) p
 [![Code Climate](https://img.shields.io/codeclimate/github/cgorshing/BuildBlink.svg)](https://img.shields.io/codeclimate/github/cgorshing/BuildBlink.svg)
 [![Code Climate](https://img.shields.io/codeclimate/coverage/github/cgorshing/BuildBlink.svg)](https://img.shields.io/codeclimate/coverage/github/cgorshing/BuilBlink.svg)
 [![Code Climate](https://img.shields.io/codeclimate/issues/github/cgorshing/BuildBlink.svg)](https://img.shields.io/codeclimate/issues/github/cgorshing/BuildBlink.svg)
-
-![Build notification light](https://raw.githubusercontent.com/cgorshing/BuildBlink/master/build-notification.jpg)
 
 
 Install & Usage
