@@ -1,0 +1,20 @@
+{
+  "builds": [
+    {
+      "branch": "master",
+      "commit_id": "81d2282b97c37c30a40302282402828f61f4f4ee",
+      "finished_at": "2014-12-16T11:14:08.271Z",
+      "github_username": "mlocher",
+      "id": 3277309,
+      "message": "Fixed the second code block for skipping builds.",
+      "project_id": 33837,
+      "started_at": "2014-12-16T11:13:35.178Z ",
+      "status": "success",
+      "uuid": "80240b80-6742-0132-8d88-366b9ffd5919"
+    }
+  ],
+  "id": 33837,
+  "repository_name": "codeship/documentation",
+  "repository_provider": "github",
+  "uuid": "59a737f0-1648-0132-c4e7-72c6c37b1f6e"
+}
