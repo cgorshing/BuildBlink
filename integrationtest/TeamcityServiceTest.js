@@ -29,10 +29,10 @@ suite('TeamcityService', function() {
     });
   });
 
-  suite('getBuildActivityForBuildId', function() {
+  suite('getBuildActivity', function() {
     test('should_return_build_activity', function(done) {
 
-      service.getBuildActivityForBuildId('BranchingTest_Build', function(err, result) {
+      service.getBuildActivity( { id: 'BranchingTest_Build' }, function(err, result) {
         result.should.be.an.instanceof(TeamCityBuildActivity, 'BuildActivity');
         result.currentBuild.buildTypeId.should.equal('BranchingTest_Build');
         done();

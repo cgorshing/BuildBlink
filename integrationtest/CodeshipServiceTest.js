@@ -48,10 +48,10 @@ suite('CodeshipService', function() {
     });
   });
 
-  suite('getBuildActivityForBuildId', function() {
+  suite('getBuildActivity', function() {
     test('should_return_build_activity', function(done) {
 
-      service.getBuildActivityForBuildId('973711', function(err, result) {
+      service.getBuildActivity('973711', function(err, result) {
         result.should.be.an.instanceof(CodeshipBuildActivity, "BuildActivity");
         result.currentBuild.id.should.equal(973711);
         done();

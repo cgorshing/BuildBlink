@@ -38,9 +38,9 @@ suite('TeamCityService', function() {
     });
   });
 
-  suite('getBuildActivityForId', function() {
+  suite('getBuildActivity', function() {
     test('should_get_build_activity_for_project_id', function() {
-      service.getBuildActivityForBuildId('BranchingTest_Build', function(err, activity) {
+      service.getBuildActivity({ id: 'BranchingTest_Build' }, function(err, activity) {
         activity.should.have.property('isBuildingFromGreen', false);
         activity.should.have.property('isBuildingFromGreen', false);
         activity.should.have.property('isGreen', true);
