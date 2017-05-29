@@ -16,9 +16,9 @@ suite('TeamcityService', function() {
 
   setup(function() {
     //config = require('nconf').get();
-    config = JSON.parse(fs.readFileSync('./integrationtest/fakeTeamCityConfig.json', "utf8"));
+    config = JSON.parse(fs.readFileSync('./integrationtest/fakeTeamCityConfig.json', 'utf8'));
     mockGateway.getBuildsForProjectId = function (projectId, callback) {
-      callback(null, { build: [{buildTypeId: projectId, id: ''}, {buildTypeId: '', id: ''}]});
+      callback(null, new TeamCityBuildActivity({ build: [{buildTypeId: projectId, id: ''}, {buildTypeId: '', id: ''}]}));
     };
     service = new TeamCityService(config, mockGateway);
   });
@@ -33,7 +33,7 @@ suite('TeamcityService', function() {
     test('should_return_build_activity', function(done) {
 
       service.getBuildActivityForBuildId('BranchingTest_Build', function(err, result) {
-        result.should.be.an.instanceof(TeamCityBuildActivity, "BuildActivity");
+        result.should.be.an.instanceof(TeamCityBuildActivity, 'BuildActivity');
         result.currentBuild.buildTypeId.should.equal('BranchingTest_Build');
         done();
       });
