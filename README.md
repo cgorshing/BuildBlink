@@ -78,7 +78,7 @@ Example Configuration Files
   "__comment": "The colorStrength setting is optional",
   "colorStrength": 175,
 
-  "concourseBuildNumbers": [
+  "builds": [
     {
       "job_name": "some-job-name",
       "team": "the-team-name",
@@ -104,7 +104,7 @@ Example Configuration Files
   "colorStrength": 175,
   "apiToken": "d531727b16614332a3fdc09c583f8038",
 
-  "jenkinsBuildNumbers": [
+  "builds": [
     {
       "name": "build-1-to-monitor",
       "id": "Some-Folder-Name/job/the-build-name"
@@ -129,7 +129,7 @@ Example Configuration Files
   "__comment": "The colorStrength setting is optional",
   "colorStrength": 175,
 
-  "teamcityBuildNumbers": [
+  "builds": [
     {
       "id": "build-id-1"
     },
