@@ -18,7 +18,7 @@ suite('TeamcityService', function() {
     //config = require('nconf').get();
     config = JSON.parse(fs.readFileSync('./integrationtest/fakeTeamCityConfig.json', 'utf8'));
     mockGateway.getBuildsForProjectId = function (projectId, callback) {
-      callback(null, new TeamCityBuildActivity({ build: [{buildTypeId: projectId, id: ''}, {buildTypeId: '', id: ''}]}));
+      callback(null, { build: [{buildTypeId: projectId, id: ''}, {buildTypeId: '', id: ''}]});
     };
     service = new TeamCityService(config, mockGateway);
   });
