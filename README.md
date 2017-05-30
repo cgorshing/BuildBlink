@@ -52,7 +52,7 @@ Requirements
 
 TeamCity has to have guestAuth enabled. Your TeamCity should respond to the sample url:
 
-[http://teamcity.example.com:8111/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2](http://teamcity.example.com:8111/<optional prefix path>/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2)
+[http://teamcity.example.com:8111/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2](http://teamcity.example.com:8111/guestAuth/app/rest/buildTypes/id:Build_Identifier/builds?locator=running:any,branch:(unspecified:any),lookupLimit:2)
 
 An optional `teamcityPostfix` can also be specified in case the application is not mapped to the root path. See the examples of this configuration in the sample `~/.buildblinkrc` files below.
 
