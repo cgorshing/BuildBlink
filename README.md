@@ -170,3 +170,5 @@ Contributing
 * See the GitHub [**issues**](https://github.com/cgorshing/buildblink/issues?labels=enhancement&state=open) page for enhancements, and submit any new ideas
 * Pull Request
 * Reach out on [Twitter](https://twitter.com/cgorshing)
+
+[![Analytics](https://ga-beacon.appspot.com/UA-58872618-3/cgorshing/BuilBlink/README.md?pixel)](https://github.com/igrigorik/ga-beacon)
