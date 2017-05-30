@@ -60,6 +60,7 @@ Currently only tested on OSX.
 
 Supported CI servers:
 ----------------------
+* Circle CI
 * Codeship (Thanks to [Greg Stewart](https://github.com/gregstewart))
 * Concourse CI
 * Jenkins
