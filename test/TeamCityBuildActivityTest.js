@@ -58,7 +58,6 @@ suite('TeamBuildActivity', function() {
 			activity.should.have.property('isGreen', false);
 			activity.should.have.property('isBuilding', false);
 			activity.should.have.property('isRed', true);
-			console.log(JSON.stringify(activity));
 		});
 
 		test('should_have_proper_build_token', function() {

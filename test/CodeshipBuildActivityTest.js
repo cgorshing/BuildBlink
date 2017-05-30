@@ -34,8 +34,6 @@ suite('CodeshipBuildActivity', function() {
       activity.should.have.property('isBuilding', false);
       activity.should.have.property('isBuildingFromRed', false);
 //      activity.should.have.property('isBuildingFromGreen', true);
-
-
     });
 
     test('should_not_identify_as_building_from_red', function() {
@@ -49,8 +47,6 @@ suite('CodeshipBuildActivity', function() {
       activity.should.have.property('isBuilding', false);
 //      activity.should.have.property('isBuildingFromRed', true);
       activity.should.have.property('isBuildingFromGreen', false);
-
-
     });
 
     test('should_identify_red_build', function() {
@@ -63,9 +59,6 @@ suite('CodeshipBuildActivity', function() {
       activity.should.have.property('isGreen', false);
       activity.should.have.property('isBuilding', false);
       activity.should.have.property('isRed', true);
-      console.log(JSON.stringify(activity));
-
-
     });
 
 
@@ -74,13 +67,6 @@ suite('CodeshipBuildActivity', function() {
       var activity = new CodeshipBuildActivity(buildJson);
 
       activity.should.have.property('instanceToken', buildJson.builds[0].id);
-
-
     });
-
-
-
   });
-
-
 });
