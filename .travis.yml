@@ -1,10 +1,9 @@
 language: node_js
 node_js:
   - "6.10.2"
-env:
-  - TEST_SUITE=test
-  - TEST_SUITE=integrationtest
-script: "npm $TEST_SUITE"
+script:
+  - "npm test"
+  - "npm integrationtest"
 before_install:
   - sudo apt-get update
   - sudo apt-get install libusb-1.0-0-dev
