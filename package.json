@@ -27,17 +27,17 @@
     "main": "./lib/buildblink",
     "preferGlobal": "true",
     "dependencies": {
-        "seq": "0.3.5",
-        "request": "2.81.x",
-        "sprintf": "0.1.x",
-        "express": "4.15.x",
-        "nconf": "0.8.x",
         "colors": "*",
-        "node-blink1": "0.2.x",
+        "express": "4.16.x",
         "forever": "0.15.x",
+        "moment": "2.19.x",
+        "nconf": "0.8.x",
+        "node-blink1": "0.2.x",
         "prettyjson": "1.2.x",
-        "moment": "2.18.x",
-        "readline-sync": "1.4.x"
+        "readline-sync": "1.4.x",
+        "request": "2.83.x",
+        "seq": "0.3.5",
+        "sprintf": "0.1.x"
     },
     "_comment": "I removed sync-prompt: 0.4.x above",
 
